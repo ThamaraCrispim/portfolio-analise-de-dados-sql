@@ -1,34 +1,31 @@
 # 📊 Análise de Dados com SQL | Portfólio
 
-Este repositório reúne **projetos de Análise de Dados desenvolvidos com SQL**, com foco na resolução de problemas de negócio a partir de **bases de dados relacionais**.  
-Os projetos refletem a aplicação prática de SQL para **exploração, tratamento, agregação e análise de dados**, simulando cenários reais do mercado.
+Este repositório reúne **projetos de Análise de Dados desenvolvidos com SQL**, com foco na exploração, manipulação e análise de dados armazenados em **bancos de dados relacionais**.  
+Os estudos aqui apresentados demonstram a aplicação prática de SQL para responder **perguntas de negócio**, gerar métricas e apoiar a tomada de decisão baseada em dados.
 
 ---
 
 ## 🎯 Objetivos
 
-- Desenvolver análises de dados utilizando SQL aplicado a problemas reais  
-- Explorar e manipular grandes volumes de dados em bancos relacionais  
-- Criar consultas eficientes com **JOINs, subqueries, CTEs e funções agregadas**  
-- Aplicar métricas e indicadores para responder perguntas de negócio  
-- Consolidar um **portfólio técnico em SQL** voltado à área de Dados  
+- Desenvolver análises de dados utilizando SQL aplicado a contextos reais  
+- Manipular e explorar dados em bancos de dados relacionais  
+- Construir consultas eficientes para extração e transformação de dados  
+- Aplicar funções agregadas, filtros e agrupamentos para geração de indicadores  
+- Consolidar um **portfólio técnico em SQL** voltado à área de Análise de Dados  
 
 ---
 
 ## 🧠 Conteúdo
 
-Cada pasta deste repositório corresponde a um **projeto de análise independente**, estruturado a partir de **bases de dados reais ou amplamente utilizadas para fins educacionais**.
+O repositório é composto por **projetos de análise independentes**, organizados em pastas, cada um abordando um conjunto de dados e um problema analítico distinto.  
+As análises envolvem bases de dados estruturadas, permitindo a prática de consultas SQL em cenários próximos aos encontrados no mercado.
 
-Os projetos incluem:
+Os projetos exploram diferentes tipos de análises, incluindo:
 
-- 📦 Análise de vendas e desempenho comercial  
-- 👥 Análise de clientes e comportamento de compra  
-- 💰 Métricas de faturamento, ticket médio e crescimento  
-- 🗂️ Modelagem lógica e entendimento de esquemas relacionais  
-
-Exemplos de bases utilizadas:
-- **Northwind**
-- **Olist (E-commerce brasileiro)**
+- 📦 Análise de desempenho e resultados  
+- 👥 Análise de clientes e comportamento  
+- 💰 Métricas, indicadores e análises temporais  
+- 🗂️ Exploração de esquemas e relacionamentos entre tabelas  
 
 ---
 
@@ -38,15 +35,17 @@ Exemplos de bases utilizadas:
 - JOINs (INNER, LEFT, RIGHT)
 - Subqueries e CTEs
 - Funções agregadas e analíticas
-- Criação de métricas e indicadores
-- Organização de queries por contexto de negócio
+- Filtros, ordenações e agrupamentos
+- Organização e documentação de consultas SQL
 
 ---
 
 ## 📌 Estrutura do Repositório
 
 ```text
-01_northwind_sales_analysis/
-02_olist_ecommerce_analysis/
-README.md
-LICENSE
+/
+├── projeto_01/
+├── projeto_02/
+├── ...
+├── README.md
+└── LICENSE
