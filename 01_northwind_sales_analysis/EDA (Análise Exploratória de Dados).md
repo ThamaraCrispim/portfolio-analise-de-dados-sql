@@ -1,16 +1,18 @@
-### Análise Exploratória de Dados da Tabela northwind_orders
+### 📊 Análise Exploratória de Dados da Tabela northwind_orders
 
+**A análise exploratória de dados (EDA) é uma etapa fundamental para compreender melhor a estrutura e o conteúdo do banco de dados. Esse entendimento inicial é essencial para direcionar análises mais aprofundadas e garantir a qualidade das conclusões obtidas.**
 
+---
 
-
-**A análise exploratória de dados (EDA) é uma etapa fundamental para compreendermos melhor a estrutura e o conteúdo do banco de dados. Esse entendimento inicial é essencial para direcionar análises mais aprofundadas e garantir a qualidade das conclusões obtidas.**
-
-**Comando SQL utilizado:**
+### 🔹 Comando SQL utilizado
 
 ```sql
-SELECT order_id, customer_id, employee_id, order_date, required_date, shipped_date, ship_via, freight, ship_name, ship_address, ship_city, ship_region, ship_postal_code, ship_country
+SELECT order_id, customer_id, employee_id, order_date, required_date, shipped_date,
+       ship_via, freight, ship_name, ship_address, ship_city, ship_region,
+       ship_postal_code, ship_country
 FROM northwind_orders
 LIMIT 10;
+
 ```
 
 **Print do resultado no mysql:**
@@ -20,7 +22,7 @@ LIMIT 10;
 **Classificação das Variáveis**
 
 
-**A tabela abaixo apresenta a classificação estatística de cada coluna da tabela northwind_orders. Essa classificação é importante para entender como cada variável pode ser utilizada em ##análises estatísticas e modelagens.**
+**A tabela abaixo apresenta a classificação estatística de cada coluna da tabela northwind_orders. Essa classificação é importante para entender como cada variável pode ser utilizada em análises estatísticas e modelagens..**
 
 
 | Coluna             | Tipo estatístico              |
@@ -52,9 +54,9 @@ select count(*) as toral_registros from northwind_orders
 ![ Número de Resgistos](https://github.com/ThamaraCrispim/SQL-PoD-Academy/blob/main/imagens/Numero%20de%20resgisto!%20projeto%201.png)
 
 
-**Análise:**
-A consulta realizada contabiliza um total de 830 registros na tabela northwind_orders, valor que representa a quantidade de vendas/pedidos efetuados e devidamente registrados no sistema.
 
+**Análise:**
+A consulta realizada contabiliza um total de 830 registros na tabela northwind_orders, valor que representa a quantidade de pedidos efetuados e devidamente registrados no sistema
 
 ### Verifique Valores Nulos
 
@@ -83,7 +85,7 @@ FROM northwind_orders;
 
 
 **Análise:**
-Todas as colunas analisadas na tabela northwind_orders apresentam 0 valores nulos. Portanto, não é necessário realizar tratamento para dados ausentes nesta etapa.
+Todas as colunas analisadas apresentam zero valores nulos, indicando que não é necessário realizar tratamento para dados ausentes nesta etapa.
 
 ### Resumo Estatístico de Colunas Numéricas
 
