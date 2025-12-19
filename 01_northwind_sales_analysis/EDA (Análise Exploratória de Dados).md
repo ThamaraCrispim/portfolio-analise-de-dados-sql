@@ -15,7 +15,7 @@ LIMIT 10;
 ![Descrição da tabela employees](https://github.com/ThamaraCrispim/SQL-PoD-Academy/blob/main/imagens/projeto%2001%20-%20select%20%2B%20from.png)
 
 **Classificação das Variáveis**
-##A tabela abaixo apresenta a classificação estatística de cada coluna da tabela northwind_orders. Essa classificação é importante para entender como cada variável pode ser utilizada em análises estatísticas e modelagens. ##
+##A tabela abaixo apresenta a classificação estatística de cada coluna da tabela northwind_orders. Essa classificação é importante para entender como cada variável pode ser utilizada em ##análises estatísticas e modelagens. ##
 
 
 | Coluna             | Tipo estatístico              |
