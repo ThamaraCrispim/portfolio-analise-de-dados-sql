@@ -6,7 +6,8 @@ FROM northwind_orders
 LIMIT 10;
 ```
 
-###classificação
+**Classificação das Variáveis**
+##A tabela abaixo apresenta a classificação estatística de cada coluna da tabela northwind_orders. Essa classificação é importante para entender como cada variável pode ser utilizada em análises estatísticas e modelagens. ##
 
 
 | Coluna             | Tipo estatístico              |
