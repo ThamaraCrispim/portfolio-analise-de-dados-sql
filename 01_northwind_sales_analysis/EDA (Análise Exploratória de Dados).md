@@ -78,8 +78,43 @@ FROM northwind_orders;
 ```
 **Print do resultado no mysql:**
 
+
 ![ Valor is null](https://github.com/ThamaraCrispim/SQL-PoD-Academy/blob/main/imagens/is%20null.png)
+
 
 **Análise:
 Todas as colunas analisadas na tabela northwind_orders apresentam 0 valores nulos. Portanto, não é necessário realizar tratamento para dados ausentes nesta etapa.***
 
+### Resumo Estatístico de Colunas Numéricas
+
+
+```sql
+SELECT
+  MIN(freight) AS minimo,
+  MAX(freight) AS maximo,
+  AVG(freight) AS media,
+  STDDEV(freight) AS desvio_padrao,
+  SUM(freight) AS soma
+FROM northwind_orders;
+```
+**Print do resultado no mysql:**
+
+![ Número de Resgistos](https://github.com/ThamaraCrispim/SQL-PoD-Academy/blob/main/imagens/estat%C3%ADstica%20basica.png)
+
+
+**Análise dos Resultados
+1. Valor Mínimo (0.02)
+O menor valor de frete registrado é 0,02.
+Isso indica que há pedidos com frete praticamente nulo, o que pode ser resultado de promoções, entregas locais ou até mesmo possíveis erros de cadastro.
+2. Valor Máximo (1007.64)
+O maior valor de frete é 1007,64.
+Esse valor é bastante elevado em relação à média, sugerindo a existência de pedidos excepcionais (talvez entregas internacionais, cargas muito grandes ou erros de digitação).
+3. Média (78.24)
+O valor médio do frete é 78,24.
+Isso representa o custo médio de envio dos pedidos registrados no banco de dados.
+4. Desvio Padrão (116.71)
+O desvio padrão é 116,71, que é maior do que a média.
+Isso indica uma grande dispersão nos valores de frete, ou seja, há bastante variação entre os pedidos (alguns com fretes muito baixos e outros com valores muito altos).
+5. Soma Total (64942.69)
+A soma total dos valores de frete é 64.942,69.
+Esse valor representa o total arrecadado (ou gasto) com fretes em todos os pedidos registrados.**
