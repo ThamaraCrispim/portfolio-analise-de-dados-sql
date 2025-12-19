@@ -152,7 +152,7 @@ ORDER BY ano;
 ```
 ![Distribuição](https://github.com/ThamaraCrispim/SQL-PoD-Academy/blob/main/imagens/DATA.png)
 
-***Análise:**
+**Análise:**
 1-Crescimento Significativo em 1997
 O número de pedidos aumentou de 152 em 1996 para 408 em 1997, representando um crescimento de aproximadamente 168%.
 Esse salto pode indicar um período de expansão da empresa, entrada em novos mercados, aumento da base de clientes ou estratégias comerciais mais agressivas.
@@ -172,7 +172,7 @@ SELECT COUNT(DISTINCT ship_country) AS valores_unicos FROM northwind_orders;
 ````
 ![Distribuição](https://github.com/ThamaraCrispim/SQL-PoD-Academy/blob/main/imagens/pa%C3%ADs.png)
 
-***Análise:**
+**Análise:**
 A presença de 21 países distintos demonstra que a empresa fictícia Northwind possui uma atuação internacional significativa, atendendo clientes em diversos mercados ao redor do mundo. Esse dado pode ser útil para análises futuras sobre distribuição de vendas, identificação de mercados prioritários e estratégias de expansão.
 
 
