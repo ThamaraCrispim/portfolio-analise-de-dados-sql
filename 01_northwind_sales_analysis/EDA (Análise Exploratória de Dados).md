@@ -119,3 +119,25 @@ Isso indica uma grande dispersão nos valores de frete, ou seja, há bastante va
 5. Soma Total (64942.69)
 A soma total dos valores de frete é 64.942,69.
 Esse valor representa o total arrecadado (ou gasto) com fretes em todos os pedidos registrados
+
+###  Distribuição de Valores (Frequência)
+
+
+```sql
+select ship_country, count(*) As frequencia 
+from northwind_orders
+Group by ship_country
+order by frequencia desc
+```
+**Print do resultado no mysql:**
+
+![Distribuição de Valores](https://github.com/ThamaraCrispim/SQL-PoD-Academy/blob/main/imagens/Frequencia.png)
+
+**Análise:**
+1- Países com Maior Número de Pedidos: Alemanha (Germany) e Estados Unidos (USA) lideram com o mesmo número de pedidos (122 cada), indicando que são mercados muito relevantes para a empresa. Brasil aparece em terceiro lugar, mostrando também grande importância no volume de vendas. Países europeus como França, Reino Unido, Áustria, Suécia, Itália e Espanha também têm destaque, sugerindo uma forte atuação da empresa na Europa.
+
+![Distribuição de Valores](https://github.com/ThamaraCrispim/SQL-PoD-Academy/blob/main/imagens/frequencia01.png)
+
+**Análise:**
+2- Esses países têm participação menor no volume total de pedidos.
+Destaca-se a presença de países da Europa Ocidental e do Norte, além da Argentina e Portugal.
