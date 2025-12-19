@@ -145,15 +145,35 @@ Destaca-se a presença de países da Europa Ocidental e do Norte, além da Argen
 ###  Distribuição Temporal (se houver datas)
 
 ```sql
-SELECT YEAR(coluna_data) AS ano, COUNT(*) AS total
-FROM nome_da_tabela
+SELECT YEAR(order_date) AS ano, COUNT(*) AS total
+FROM northwind_orders
 GROUP BY ano
-ORDER BY ano
+ORDER BY ano;
 ```
+![Distribuição](https://github.com/ThamaraCrispim/SQL-PoD-Academy/blob/main/imagens/DATA.png)
+
+***Análise:**
+1-Crescimento Significativo em 1997
+O número de pedidos aumentou de 152 em 1996 para 408 em 1997, representando um crescimento de aproximadamente 168%.
+Esse salto pode indicar um período de expansão da empresa, entrada em novos mercados, aumento da base de clientes ou estratégias comerciais mais agressivas.
+
+2-Queda em 1998
+Em 1998, houve uma redução para 270 pedidos, uma queda de cerca de 33% em relação ao ano anterior.
+Essa diminuição pode estar relacionada a fatores como sazonalidade, mudanças no mercado, ajustes internos ou até mesmo questões econômicas externas.
+
+3-Tendência Geral
+O período analisado mostra um pico em 1997, seguido por uma estabilização em um patamar superior ao de 1996.
+Mesmo com a queda em 1998, o volume de pedidos permaneceu consideravelmente maior do que no início da série.
 
 ### Identifique Valores Únicos
 
 ```sql
-SELECT COUNT(DISTINCT coluna) AS valores_unicos FROM nome_da_tabela;
+SELECT COUNT(DISTINCT ship_country) AS valores_unicos FROM northwind_orders;
 ````
+![Distribuição](https://github.com/ThamaraCrispim/SQL-PoD-Academy/blob/main/imagens/pa%C3%ADs.png)
+
+***Análise:**
+A presença de 21 países distintos demonstra que a empresa fictícia Northwind possui uma atuação internacional significativa, atendendo clientes em diversos mercados ao redor do mundo. Esse dado pode ser útil para análises futuras sobre distribuição de vendas, identificação de mercados prioritários e estratégias de expansão.
+
+
 
